@@ -69,13 +69,33 @@ fun IsnotemptyApp() {
                 AppDestinations.FAVORITES -> "fish"
                 AppDestinations.PROFILE -> "alexis"
             }
+            when (currentDestination) {
 
-            Greeting(
-                name = name,
-                modifier = Modifier.padding(innerPadding),
-                currentDestination = currentDestination,
-                tema = temaActual
-            )
+                AppDestinations.HOME-> {
+                    Greeting(
+                        name = name,
+                        modifier = Modifier.padding(innerPadding),
+                        currentDestination = currentDestination,
+                        tema = temaActual
+                    )
+                }
+                AppDestinations.FAVORITES -> {
+                    Greeting2(
+                        name = name,
+                        modifier = Modifier.padding(innerPadding),
+                        currentDestination = currentDestination,
+                        tema = temaActual
+                    )
+                }
+                AppDestinations.PROFILE -> {
+                    Greeting(
+                        name = name,
+                        modifier = Modifier.padding(innerPadding),
+                        currentDestination = currentDestination,
+                        tema = temaActual
+                    )
+                }
+            }
         }
     }
 }

@@ -1,20 +1,14 @@
 package com.example.isnotempty.ui.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -30,12 +24,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.isnotempty.R
+import com.example.isnotempty.ui.components.ContadorCard
+import com.example.isnotempty.ui.components.EntradaTextoField
 import com.example.isnotempty.ui.theme.IsnotemptyTheme
 import com.example.isnotempty.ui.theme.TemaColor
 import com.example.isnotempty.ui.theme.obtenerTema
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.size
-import com.example.isnotempty.R
 
 @Composable
 fun Greeting(
@@ -70,56 +64,20 @@ fun Greeting(
             color = tema.letras
         )
 
-        // Tarjeta interactiva con contador y botones
-        Card(
-            modifier = Modifier.fillMaxWidth(),
-            colors = CardDefaults.cardColors(containerColor = tema.detalles.copy(alpha = 0.15f))
-        ) {
-            Column(
-                modifier = Modifier.padding(16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = "Contador de clics: $contador",
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    color = tema.letras
-                )
+        // 1. Tarjeta interactiva extraída a ui/components/ContadorCard
+        ContadorCard(
+            contador = contador,
+            onSumarClick = { contador++ },
+            onReiniciarClick = { contador = 0 },
+            tema = tema
+        )
 
-                Spacer(modifier = Modifier.height(12.dp))
-
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Button(
-                        onClick = { contador++ },
-                        colors = ButtonDefaults.buttonColors(containerColor = tema.botones)
-                    ) {
-                        Text(text = "Sumar (+1)", color = tema.fondo)
-                    }
-
-                    Button(
-                        onClick = { contador = 0 },
-                        colors = ButtonDefaults.buttonColors(containerColor = tema.letras)
-                    ) {
-                        Text(text = "Reiniciar", color = tema.fondo)
-                    }
-                }
-            }
-        }
-
-        // Campo para escribir texto
-        OutlinedTextField(
-            value = textoIngresado,
+        // 2. Campo de texto extraído a ui/components/EntradaTextoField
+        EntradaTextoField(
+            valor = textoIngresado,
             onValueChange = { textoIngresado = it },
-            label = { Text("Escribe algo aquí", color = tema.letras) },
-            modifier = Modifier.fillMaxWidth(),
-            colors = OutlinedTextFieldDefaults.colors(
-                focusedTextColor = tema.letras,   // Color del texto escrito al enfocar
-                unfocusedTextColor = tema.letras, // Color del texto escrito al desenfocar
-                focusedBorderColor = tema.botones,
-                unfocusedBorderColor = tema.letras,
-                focusedLabelColor = tema.botones,
-                unfocusedLabelColor = tema.botones //antes letrascolor
-            )
+            label = "Escribe algo aquí",
+            tema = tema
         )
 
         if (textoIngresado.isNotEmpty()) {
@@ -130,7 +88,9 @@ fun Greeting(
                 color = tema.detalles
             )
         }
+
         Spacer(modifier = Modifier.height(20.dp))
+
         Image(
             painter = painterResource(id = R.drawable.ic_home), // sin el .xml
             contentDescription = "Descripción del icono",
