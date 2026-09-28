@@ -26,6 +26,7 @@ data class Usuario(val id: Int, val nombre: String, val email: String) {
                 id = idActividad,
                 titulo = nombreActividad,
                 descripcion = "",
+
                 propietario = this,
                 segmentoTiempo = SegmentoTiempo(
                     inicio = LocalDateTime.now(),
