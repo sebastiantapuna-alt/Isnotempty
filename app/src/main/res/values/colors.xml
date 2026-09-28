@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores base originales -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brown_200">#FFE3CFBA</color>
+
+    <!-- Rojos y Rosados -->
+    <color name="red">#FFF44336</color>
+    <color name="red_light">#FFEF5350</color>
+    <color name="red_dark">#FFC62828</color>
+    <color name="pink">#FFE91E63</color>
+    <color name="pink_light">#FFF06292</color>
+
+    <!-- Azules y Celestes -->
+    <color name="blue">#FF2196F3</color>
+    <color name="blue_light">#FF64B5F6</color>
+    <color name="blue_dark">#FF1565C0</color>
+    <color name="cyan">#FF00BCD4</color>
+
+    <!-- Verdes -->
+    <color name="green">#FF4CAF50</color>
+    <color name="green_light">#FF81C784</color>
+    <color name="green_dark">#FF2E7D32</color>
+
+    <!-- Amarillos y Naranjas -->
+    <color name="yellow">#FFFFEB3B</color>
+    <color name="yellow_dark">#FFFBC02D</color>
+    <color name="orange">#FFFF9800</color>
+    <color name="orange_dark">#FFE65100</color>
+
+    <!-- Grises -->
+    <color name="gray_light">#FFF5F5F5</color>
+    <color name="gray">#FF9E9E9E</color>
+    <color name="gray_dark">#FF424242</color>
+
+    <!-- Colores Pastel -->
+    <color name="pastel_blue">#FFAEC6CF</color>
+    <color name="pastel_green">#FF77DD77</color>
+    <color name="pastel_yellow">#FFFDFD96</color>
+    <color name="pastel_pink">#FFFFB7B2</color>
+    <color name="pastel_purple">#FFB39DDB</color>
+
+    <!-- PALETA: TEMA 1 (OCEAN WAVE) -->
+    <color name="tema1_fondo">#FFC4DFE6</color>
+    <color name="tema1_secundario">#FF66A5AD</color>
+    <color name="tema1_botones">#FF07575B</color>
+    <color name="tema1_letras">#FF003B46</color>
+
+    <!-- PALETA: TEMA 2 (AZULES HELADOS Y GRISES) -->
+    <color name="tema2_fondo">#FFF1F1F2</color>
+    <color name="tema2_secundario">#FFBCBABE</color>
+    <color name="tema2_detalles">#FFA1D6E2</color>
+    <color name="tema2_botones">#FF1995AD</color>
+
+    <!-- PALETA: TEMA 3 (OASIS URBANO) -->
+    <color name="tema3_fondo">#FFF3EBDD</color>
+    <color name="tema3_botones">#FF506D2F</color>
+    <color name="tema3_detalles">#FF7D5642</color>
+    <color name="tema3_letras">#FF2A2922</color>
+
+    <!-- PALETA: TEMA 4 (BLUE-GREEN SHANGHAI) -->
+    <color name="tema4_fondo">#FFF4EBDB</color>
+    <color name="tema4_secundario">#FF8E9B97</color>
+    <color name="tema4_detalles">#FF537072</color>
+    <color name="tema4_letras">#FF2C4A52</color>
+
+    <!-- PALETA: TEMA 8 (SUTIL Y PROFESIONAL) -->
+    <color name="tema8_fondo">#FF90AFC5</color>
+    <color name="tema8_secundario">#FF336B87</color>
+    <color name="tema8_detalles">#FF763626</color>
+    <color name="tema8_botones">#FF336B87</color>
+    <color name="tema8_letras">#FF2A3132</color>
+
+    <!-- PALETA: TEMA 9 (ELEGANTE Y MODERNO) -->
+    <color name="tema9_fondo">#FFD5D6D2</color>
+    <color name="tema9_secundario">#FFFFFFFF</color>
+    <color name="tema9_detalles">#FF3A5199</color>
+    <color name="tema9_botones">#FF3A5199</color>
+    <color name="tema9_letras">#FF2F2E33</color>
+
+    <!-- PALETA: TEMA 10 (SUTIL Y VERSÁTIL) -->
+    <color name="tema10_fondo">#FFD4DDE1</color>
+    <color name="tema10_secundario">#FF335252</color>
+    <color name="tema10_detalles">#FFAA4B41</color>
+    <color name="tema10_botones">#FF335252</color>
+    <color name="tema10_letras">#FF2D3033</color>
+
+    <!-- PALETA: TEMA 11 (NEUTROS PICANTES) -->
+    <color name="tema11_fondo">#FFEBDCB2</color>
+    <color name="tema11_secundario">#FFC9A66B</color>
+    <color name="tema11_detalles">#FFAF4425</color>
+    <color name="tema11_botones">#FFAF4425</color>
+    <color name="tema11_letras">#FF662E1C</color>
+</resources>

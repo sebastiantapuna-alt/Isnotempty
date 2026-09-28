@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Isnotempty" parent="android:Theme.Material.Light.NoActionBar" >
+        <!-- style name="Theme.Isnotempty" parent="android:Theme.Material.NoActionBar" -->
+        <!-- pal modo oscuro esta como lo de arriba -->
+
+        <!-- Color de la barra de estado (donde está la batería/hora) -->
+        <item name="android:statusBarColor">@color/brown_200</item>
+
+        <!-- Iconos claros u oscuros en la barra de estado -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen" >
+        <item name="windowSplashScreenBackground">@color/teal_200</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Isnotempty</item>
+    </style>
+</resources>
