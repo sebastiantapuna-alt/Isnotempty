@@ -5,6 +5,5 @@ class ActividadSolitaria(override val id: Int,
                          override val descripcion: String,
                          override val propietario: Usuario,
                          override val esPrivada: Boolean = false,
-                         override val segmentoTiempo: SegmentoTiempo = SegmentoTiempo()
-): AbstractActividad {
+                         override val segmentoTiempo: SegmentoTiempo): AbstractActividad {
 }
