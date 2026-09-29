@@ -50,7 +50,7 @@ fun Greeting(
         verticalArrangement = Arrangement.spacedBy(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // Título principal
+        // Título princip al
         Text(
             text = "Hello $name!",
             fontSize = 28.sp,
