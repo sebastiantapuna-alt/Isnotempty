@@ -112,10 +112,10 @@ fun Greeting(
 @Composable
 fun GreetingPreview() {
     IsnotemptyTheme {
-        Greeting(
+        PantallaMati(
             name = "Android",
             currentDestination = AppDestinations.HOME,
-            tema = obtenerTema(1)
+            tema = obtenerTema(3)
         )
     }
 }

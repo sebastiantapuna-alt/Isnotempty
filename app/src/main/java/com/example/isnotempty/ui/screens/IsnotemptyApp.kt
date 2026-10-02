@@ -98,7 +98,7 @@ fun IsnotemptyApp() {
             }
             when (currentDestination) {
                 AppDestinations.HOME -> {
-                    Greeting(
+                    PantallaMati(
                         name = name,
                         modifier = Modifier.padding(innerPadding),
                         currentDestination = currentDestination,
